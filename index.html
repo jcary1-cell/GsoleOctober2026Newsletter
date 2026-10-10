@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSOLE October 2026 Newsletter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Core Colors extracted from the GSOLE Logo */
+            --gsole-purple: #934293;
+            --gsole-green: #8cc63f;
+            --gsole-dark-purple: #702e70;
+            /* Updated for October: Soft autumn harvest amber tint & warm parchment light tones */
+            --gsole-light-green: #f5f9ee; 
+            --gsole-autumn-amber: #fdfaf3;
+            --gsole-warm-border: #f3ebd8;
+            --gsole-white: #ffffff;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Cozy autumn slate/parchment gray tint for a premium look */
+            background-color: #f3f4f6; 
+            color: #1a1a1a;
+        }
+        .serif { font-family: 'Playfair Display', serif; }
+        
+        .newsletter-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: var(--gsole-white);
+            box-shadow: 0 25px 60px rgba(147, 66, 147, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .section-padding { padding: 4.5rem 3.5rem; }
+        @media (max-width: 640px) { .section-padding { padding: 2.5rem 1.5rem; } }
+
+        /* Typography */
+        h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 800; color: var(--gsole-purple); }
+        .green-accent { color: var(--gsole-green); }
+        .amber-accent { color: #d97706; }
+        
+        /* Buttons & Components */
+        .btn-primary {
+            background-color: var(--gsole-purple);
+            color: white;
+            padding: 0.85rem 2.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.75rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 6px;
+            box-shadow: 0 4px 14px rgba(147, 66, 147, 0.2);
+        }
+        .btn-primary:hover { 
+            background-color: var(--gsole-dark-purple); 
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(147, 66, 147, 0.3);
+        }
+
+        .sidebar-card {
+            background: var(--gsole-light-green);
+            border-left: 6px solid var(--gsole-green);
+            padding: 2.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .logo-mark {
+            color: var(--gsole-purple);
+            font-weight: 900;
+            font-size: 32px; 
+            line-height: 1; 
+            border: 3px solid var(--gsole-green); 
+            padding: 8px 12px; 
+            border-radius: 50% 50% 50% 0; 
+            transition: transform 0.3s ease;
+        }
+        .logo-mark:hover {
+            transform: rotate(-5deg) scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="newsletter-container">
+        
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row justify-between items-center px-6 md:px-14 py-12 border-b border-gray-100 bg-gradient-to-r from-white via-[#faf9f5] to-[#f6f8f2]">
+            <a href="https://gsole.org/" class="flex items-center gap-5 mb-8 md:mb-0 group transition-opacity hover:opacity-95">
+                <div class="logo-mark">G</div>
+                <div>
+                    <div class="text-xl font-black tracking-tight text-[#934293] leading-tight max-w-xs group-hover:text-[#702e70] transition-colors">
+                        The Global Society of <br> Online Literacy Educators
+                    </div>
+                </div>
+            </a>
+            <div class="text-center md:text-right">
+                <p class="text-[11px] font-extrabold tracking-[0.25em] text-gray-400 uppercase mb-1">Issue No. 24</p>
+                <p class="text-3xl font-black serif italic text-[#934293]">October 2026</p>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="section-padding bg-gradient-to-br from-white via-white to-[var(--gsole-autumn-amber)] relative overflow-hidden">
+            <!-- Subtle Autumn Leaf Organic Shape -->
+            <div class="absolute top-0 right-0 -mr-10 -mt-10 opacity-15 pointer-events-none text-[#8cc63f]">
+                <svg width="320" height="320" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M48,-65.2C61.8,-56.3,72,-41.8,76.5,-25.9C81, -10,79.8,7.3,73.8,22.8C67.8,38.3,57,52,43.4,61.7C29.8,71.4,13.4,77.1,-3.2,81.5C-19.8,85.9,-36.6,89,-49.6,81.4C-62.6,73.8,-71.8,55.5,-76.8,37.3C-81.8,19.1,-82.6,1,-77.9,-15.2C-73.2,-31.4,-63,-45.7,-49.8,-54.8C-36.6,-63.9,-20.4,-67.8,-3.1,-63.5C14.2,-59.2,34.2,-74.1,48,-65.2Z" transform="translate(100 100)" />
+                </svg>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-10 md:gap-16 relative z-10">
+                <div class="md:col-span-12 mb-4">
+                    <h1 class="text-5xl md:text-7xl leading-tight mb-4">
+                        Gathering and <span class="green-accent italic">Renewal.</span>
+                    </h1>
+                    <div class="h-1.5 w-24 bg-gradient-to-r from-[#8cc63f] to-[#d97706] rounded-full mb-8"></div>
+                    <p class="text-sm font-bold uppercase tracking-[0.25em] text-gray-400">President’s Message</p>
+                </div>
+
+                <div class="md:col-span-7">
+                    <div class="prose prose-slate max-w-none text-gray-700 leading-relaxed text-lg">
+                        <p class="mb-6">Dear GSOLE Members,</p>
+                        
+                        <p class="mb-6">Happy Fall! 🍂</p>
+
+                        <p class="mb-6">Fall 2026 is here. Leaves are turning. Both the Fall 2026 semester and the Fall 2026 quarter have begun. And I am sitting here in Starbucks composing this message taking in wafts of pumpkin spice.</p>
+
+                        <p class="mb-4">After listening to the visions of the executive board members at the August 2026 Executive Board meeting, we are in the process of creating three ad hoc committees:</p>
+
+                        <ul class="list-disc pl-6 mb-6 space-y-1 text-gray-700">
+                            <li>Digital Initiatives</li>
+                            <li>Global Presence &amp; Pedagogies</li>
+                            <li>Contingent Faculty Support &amp; Advocacy</li>
+                        </ul>
+
+                        <p class="mb-6">Cat Mahaffey (University of North Carolina, Charlotte) and Trent Kays (Augusta University) have agreed to co-chair Digital Initiatives, while the other two have members and are organizing their leadership. Rather than micromanaging these groups, I have asked these content experts to develop their own charges for the next year and present them to the executive board in October or November. Over the next few weeks, each of these committees will choose their leadership, recruit members, and develop these charges for the year. If you are interested in any of the work that these ad hoc committees are doing, please reach out to me (<a href="mailto:kdepew@odu.edu" class="text-[#934293] underline hover:text-[#702e70]">kdepew@odu.edu</a>), and I will get you in touch with committee members. Also if you have a vision for GSOLE, especially in the absence of CCCC, please contact me, and we can discuss making it part of GSOLE’s work.</p>
+
+                        <p class="mb-6">Fall is also one of the most exciting times of the year in the organization because we learn who the plenary speakers at the upcoming GSOLE conference will be. I am excited to announce that the conference co-chairs, Mary Lourdes Silva (Ithaca College) and Ann Marie Ade (Embry Riddle Aeronautical University), with the help of Brian Harrell (Northeast Ohio Medical University and others) have recruited some amazing plenary speakers for the 2026 conference: Kofi J. Adisa (Howard Community College), Amy Cicchino (University of Central Florida) and Jessie Borgman (Arizona State University). If you saw Kofi speak at the 2026 meeting of the CCCC, then you know why you will not want to miss his plenary speech in February. I am sure they will all impart us with their reflections on the current state of writing studies and their visions for the future–especially as it relates to online writing instruction. The conference committee is also accepting proposals, so please submit what you are thinking about with the administration and teaching of your online literacy classes. And please share the CFP (<a href="https://gsole.org/2027-conference-cfp" target="_blank" rel="noopener noreferrer" class="text-[#934293] underline hover:text-[#702e70]">https://gsole.org/2027-conference-cfp</a>) with your colleagues.</p>
+
+                        <div class="mt-12">
+                            <p class="font-medium text-lg">Best,</p>
+                            <p class="font-black text-2xl serif italic text-[#934293]">Kevin DePew</p>
+                            <p class="text-xs font-bold uppercase tracking-widest text-[#8cc63f]">President, GSOLE</p>
+                            <p class="text-sm text-gray-500 mt-1"><a href="mailto:kdepew@odu.edu" class="text-[#934293] underline hover:text-[#702e70]">kdepew@odu.edu</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-5">
+                    <div class="sidebar-card shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl mb-6 flex items-center gap-2 uppercase text-[12px] tracking-widest text-gray-500 font-bold">
+                            Important Dates and Links
+                        </h3>
+                        <div class="space-y-8">
+                            <div>
+                                <p class="text-xs font-black mb-1 tracking-widest uppercase text-[#934293]">November 1, 2026</p>
+                                <p class="font-bold text-gray-900">ROLE Call for Proposals Deadline</p>
+                                <p class="text-sm text-gray-500 italic">Special Issue on AI & OWI | <a href="https://docs.google.com/forms/d/1i3hQfLUK1wOEsywbRa95Uf5bWlbopPjax8jE65Vb16M/viewform" target="_blank" rel="noopener noreferrer" class="text-[#934293] underline underline-offset-2 hover:text-purple-900">Submit Proposal</a></p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-black mb-1 tracking-widest uppercase text-[#934293]">November 3, 2026</p>
+                                <p class="font-bold text-gray-900">GSOLE Cyber Salon</p>
+                                <p class="text-sm text-gray-500 italic">3:00 PM EST | <a href="https://gsole.org/cyber-salon" target="_blank" rel="noopener noreferrer" class="text-[#934293] underline underline-offset-2 hover:text-purple-900">Register</a></p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-black mb-1 tracking-widest uppercase text-[#934293]">Winter Module</p>
+                                <p class="font-bold text-gray-900">Basic OLI Certification</p>
+                                <p class="text-sm text-gray-500 italic">Registration open | <a href="https://gsole.org/certification" target="_blank" rel="noopener noreferrer" class="text-[#934293] underline underline-offset-2 hover:text-purple-900">Learn More</a></p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-black mb-1 tracking-widest uppercase text-[#934293]">Foundational Resource</p>
+                                <p class="font-bold text-gray-900">OLI Principles & Tenets</p>
+                                <p class="text-sm text-gray-500 italic">Review guidelines | <a href="https://gsole.org/oliresources/oliprinciples" target="_blank" rel="noopener noreferrer" class="text-[#934293] underline underline-offset-2 hover:text-purple-900">Read Here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2027 GSOLE Conference Announcement Section -->
+        <section class="section-padding bg-white border-b border-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-10">
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-[#8cc63f] mb-2">Upcoming Event</p>
+                    <h2 class="text-4xl md:text-5xl serif italic text-[#934293]">Announcing the 2027 GSOLE Conference</h2>
+                    <p class="text-xl font-bold text-gray-700 mt-2">“Beyond Engagement”</p>
+                    <div class="h-1.5 w-24 bg-gradient-to-r from-[#934293] to-[#8cc63f] rounded-full mx-auto mt-4"></div>
+                </div>
+
+                <div class="prose prose-slate max-w-none text-gray-700 leading-relaxed text-lg mb-12">
+                    <p class="mb-6">
+                        GSOLE invites educators, researchers, administrators, tutors, and students to consider how digital learning environments can do more than provide access: they can open doors to meaningful participation, connection, and opportunity.
+                    </p>
+                    <p class="mb-6">
+                        “Beyond Engagement” challenges us to look past traditional evidence of engagement—screen time, course completion, forum posts, drafts—toward learning experiences that support student well-being and care, cultivate belonging, increase learner agency and critical thinking, and promote a shared purpose. The Community of Inquiry framework (social, cognitive, and teaching presence) offers a generative lens, and we invite work that confronts the structural inequities that limit engagement before it begins.
+                    </p>
+                </div>
+
+                <!-- Conference Flyers Placeholders -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 shadow-sm text-center">
+                        <img src="gsole-2027-conference-flyer-1.jpg" alt="2027 GSOLE Conference Flyer 1" class="w-full h-auto rounded-lg border border-gray-200 shadow-inner mb-3" onerror="this.onerror=null; this.src='https://placehold.co/600x800/934293/ffffff?text=2027+Conference+Flyer+1';">
+                        <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Conference Flyer 1 (<code class="text-[#934293]">gsole-2027-conference-flyer-1.jpg</code>)</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 shadow-sm text-center">
+                        <img src="gsole-2027-conference-flyer-2.jpg" alt="2027 GSOLE Conference Flyer 2" class="w-full h-auto rounded-lg border border-gray-200 shadow-inner mb-3" onerror="this.onerror=null; this.src='https://placehold.co/600x800/8cc63f/ffffff?text=2027+Conference+Flyer+2';">
+                        <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Conference Flyer 2 (<code class="text-[#934293]">gsole-2027-conference-flyer-2.jpg</code>)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call for Papers: IWAC 2027 Section -->
+        <section class="section-padding bg-white border-b border-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-[#8cc63f] mb-2">Call for Papers</p>
+                    <h2 class="text-3xl md:text-4xl serif italic text-[#934293]">Call for Papers: Represent GSOLE at IWAC 2027</h2>
+                    <div class="h-1.5 w-20 bg-gradient-to-r from-[#934293] to-[#8cc63f] rounded-full mx-auto mt-4"></div>
+                </div>
+
+                <div class="prose prose-slate max-w-none text-gray-700 leading-relaxed text-lg">
+                    <p class="mb-6">
+                        GSOLE has an affiliate relationship with the Association for Writing Across the Curriculum (AWAC) and seeks members to represent our organization at the 2027 International Writing Across the Curriculum (IWAC) Conference, July 7-10, 2027, hosted by the University of Maine’s Department of English. <a href="https://iwac.wacclearinghouse.org/call/" target="_blank" rel="noopener noreferrer" class="text-[#934293] underline hover:text-[#702e70]">The call for proposals is out now</a> and will close on October 15th.
+                    </p>
+                    <p class="mb-6">
+                        If you are planning to attend IWAC 2027 and would like to help represent GSOLE (including but not limited to potential participation in a sponsored panel), please contact Meghan Velez and Janine Morris, Affiliates Co-Chairs, at <a href="mailto:affiliates@gsole.org" class="text-[#934293] underline hover:text-[#702e70]">affiliates@gsole.org</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GSOLE Webinar Series Section -->
+        <section class="section-padding bg-white border-b border-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-[#8cc63f] mb-2">GSOLE Webinar Series</p>
+                    <h2 class="text-2xl md:text-3xl serif italic text-[#934293]">GSOLE Webinar: Mary Traester, Noël Holton Brathwaite, Chris Kervina, and Sana Sayed: "Moving from Deference to Dialogue: Cross-Institutional Social Annotation for Deep Reading Engagement"</h2>
+                    <div class="h-1.5 w-20 bg-gradient-to-r from-[#934293] to-[#8cc63f] rounded-full mx-auto mt-4"></div>
+                </div>
+
+                <div class="prose prose-slate max-w-none text-gray-700 leading-relaxed text-base space-y-4 mb-8">
+                    <p>
+                        Over the past fifteen years, research has shown that social annotation (SA) supports student learning (e.g. Johnson et al. 2010; Zhu et al. 2020). Specifically, it is the collaborative, student-centered quality of SA that creates deeper engagement with reading, where students co-create knowledge through threaded conversations in the margins. Most recently, researchers have connected the active and representational qualities of SA to social justice, where students express power through dialoguing with the text to share knowledge that may historically have been marginalized (Clinton-Lisell 2023).
+                    </p>
+                    <p>
+                        But even though SA may present opportunities for deeper learning as well as social and representational justice, it can also become a space that “exacerbates inequalities” (Clinton-Lisell 2023). As Maha Bali has observed, annotation isn’t neutral: “It is always fraught with presence, authority, relevance—and time” (Bali et al. 2022). These concerns connected to something that some of the presenters had noted in their previous research, namely that the conversations in the margins differed across campuses and institution types. We published on the successful learning outcomes we had observed, but simultaneously expressed the hope that we might one day invite our students to read together cross-institutionally to create a more diverse academic community for peer-to-peer learning (Traester et al. 2021, 347).
+                    </p>
+                    <p>
+                        This webinar presents the results of that project, which we brought to life in Fall 2024. The pilot included 226 students at three types of institutions in the U.S.: a community college, a state college, as well as one private university in the U.A.E. We will discuss how bringing readers from across diverse educational, linguistic, and cultural backgrounds together can expand students’ understanding of both texts and of themselves as readers. For example, we have all heard a student say: “I’m not a good reader,” or avoid deep reading engagement by “deferent” reading, which reproduces the author’s ideas in paraphrase. But we found that most of our student annotations shed the deferent stance by supplying their own knowledge, perspectives, and experiences, showing students inhabiting active authorial identities by questioning the author’s argument and evidence.
+                    </p>
+                    <p>
+                        The webinar concludes with discussion of limitations of our project that may make it difficult to scale or replicate by other researchers. For instance, finding other instructors to collaborate with cross-institutionally, choosing readings to assign, and coordinating due dates across different time zones and academic calendars could pose challenges. We suggest potential benefits to annotating with other instructors at one’s home institution.
+                    </p>
+                    <p>
+                        In the interactive closing of our webinar, we invite participants to troubleshoot the potential benefits and limitations of this approach. Could a project like this be feasible at your campus? What might that look like?
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 bg-[#fdfaf3] p-6 md:p-8 rounded-xl border border-[var(--gsole-warm-border)]">
+                    <div>
+                        <h3 class="font-bold text-[#934293] uppercase text-xs tracking-wider mb-3">Participants Will Gain:</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700">
+                            <li>A novel approach to help students engage in deep reading</li>
+                            <li>A deepened awareness of how SA can foster equitable and accessible literacy practices through peer-to-peer learning</li>
+                            <li>An understanding of the potential benefits and limitations of cross-institutional annotation</li>
+                            <li>How to adapt the project for success on their own campus</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-[#934293] uppercase text-xs tracking-wider mb-3">Registration Information:</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700">
+                            <li>Free for GSOLE members; <a href="https://gsole.org/webinars" target="_blank" rel="noopener noreferrer" class="text-[#934293] underline hover:text-[#702e70]">register here</a></li>
+                            <li>$15 for non-members</li>
+                            <li>Become a member! ($30 regular; $20 students/contingent)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call for New GSOLE Position Section -->
+        <section class="section-padding bg-white border-b border-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-[#8cc63f] mb-2">Leadership Opportunity</p>
+                    <h2 class="text-3xl md:text-4xl serif italic text-[#934293]">New Position: GSOLE Archivist</h2>
+                    <div class="h-1.5 w-20 bg-gradient-to-r from-[#934293] to-[#8cc63f] rounded-full mx-auto mt-4"></div>
+                </div>
+
+                <div class="prose prose-slate max-w-none text-gray-700 leading-relaxed text-lg">
+                    <p class="mb-6">
+                        GSOLE has created an archivist position to help organize and store its content for efficient future retrieval. This is a great position for anyone who wants to apply the archival research methods they have studied. The job description is as follows:
+                    </p>
+                    <p class="mb-6">
+                        As an organization that operates predominantly virtually, GSOLE has generated a lot of online artifacts associated with its daily operations, and the resources it provides on the Online Literacy Educator community (e.g., conference, webinars, publications, certification course). As a result, we are looking for a head archivist who will take on the following responsibilities…
+                    </p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+                        <li>Recruit members of Archive Committee</li>
+                        <li>Create a proposal for organizing, displaying, retrieving and sunsetting existing GSOLE artifacts</li>
+                        <li>Collaborate with leadership on formalized policy and procedure for the on-going creation, display, and retrieval of future artifacts</li>
+                        <li>Work with the Content Curator on design and retrieval of artifacts from the GSOLE website</li>
+                        <li>Make videos of presenters’ sessions available during the GSOLE conference</li>
+                        <li>Coordinate with presenters featured in videos on the long-term storage of GSOLE conference session and webinar videos</li>
+                        <li>Attend Executive Board meetings (monthly)</li>
+                    </ul>
+                    <p class="mb-6">
+                        If you are interested in this position or you know someone who might be interested, please have them contact me at <a href="mailto:kdepew@odu.edu" class="text-[#934293] underline hover:text-[#702e70]">kdepew@odu.edu</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publish with GSOLE Section -->
+        <section class="section-padding bg-white border-b border-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-[#8cc63f] mb-2">Publishing Opportunities</p>
+                    <h2 class="text-3xl md:text-4xl serif italic text-[#934293]">Publish with GSOLE</h2>
+                    <div class="h-1.5 w-20 bg-gradient-to-r from-[#934293] to-[#8cc63f] rounded-full mx-auto mt-4"></div>
+                </div>
+
+                <div class="prose prose-slate max-w-none text-gray-700 leading-relaxed text-lg">
+                    <p class="mb-6">
+                        Consider publishing in one of GSOLE’s three Online Literacy Open Resource (OLOR) journals:
+                    </p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+                        <li><span class="font-bold">OLOR Effective Practices</span> (peer-reviewed) publishes brief, practical articles sharing teaching strategies for online, hybrid, and digitally enhanced learning.</li>
+                        <li><span class="font-bold">Research in Online Literacy Education (ROLE)</span> (peer-reviewed) publishes original research and scholarship in literacy-based online education.</li>
+                        <li><span class="font-bold">OLOR Reviews</span> publishes reviews of books and technologies related to online literacy education.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EASA Conference Call for Papers Section -->
+        <section class="section-padding bg-white border-b border-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-[#8cc63f] mb-2">External Call for Papers</p>
+                    <h2 class="text-3xl md:text-4xl serif italic text-[#934293]">Conference Call For Papers: The Education Association of South Africa (EASA) Learning on the Rising Tides: Inspirational Approaches to Education, Creativity, Harmonious Collaboration, and Deeper Social Connections</h2>
+                    <div class="h-1.5 w-20 bg-gradient-to-r from-[#934293] to-[#8cc63f] rounded-full mx-auto mt-4"></div>
+                </div>
+
+                <div class="prose prose-slate max-w-none text-gray-700 leading-relaxed text-lg space-y-6">
+                    <p>
+                        The Education Association of South Africa (EASA) invites academics, researchers, practitioners and scholars to submit abstracts for the EASA Annual Conference 2027, taking place 17–20 January 2027 at the Boardwalk Sun International, Gqeberha, South Africa.
+                    </p>
+                    <p>
+                        The conference offers a dynamic platform to share research, exchange ideas and build scholarly collaborations around contemporary and emerging issues in education, including AI and human-centred education, digital futures in Africa, innovation and inclusion, early childhood education, communities of practice, engaged scholarship, educational leadership, social justice and transformative pedagogies.
+                    </p>
+                    <p>
+                        Abstract submissions are now open! Abstracts should be 200–300 words, with opportunities for oral papers, symposia, workshops, roundtable discussions and poster presentations.
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><span class="font-bold">Abstract submission deadline:</span> 30 October 2026</li>
+                        <li><span class="font-bold">Registration deadline:</span> 16 November 2026</li>
+                        <li><span class="font-bold">Website:</span> <a href="https://www.easa.ac.za/easa-2027/" target="_blank" rel="noopener noreferrer" class="text-[#934293] underline hover:text-[#702e70]">https://www.easa.ac.za/easa-2027/</a></li>
+                    </ul>
+                    <p class="font-medium italic">
+                        Share your research. Connect with fellow scholars. Contribute to conversations shaping the future of education.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employment Opportunities Section -->
+        <section class="section-padding bg-white border-b border-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-[#8cc63f] mb-2">Employment Opportunities</p>
+                    <h2 class="text-3xl md:text-4xl serif italic text-[#934293]">Employment Opportunity: Arizona State University Online: SASA - Faculty Associate - English AY2026-27</h2>
+                    <div class="h-1.5 w-20 bg-gradient-to-r from-[#934293] to-[#8cc63f] rounded-full mx-auto mt-4"></div>
+                </div>
+
+                <div class="prose prose-slate max-w-none text-gray-700 leading-relaxed text-lg space-y-6">
+                    <p>
+                        The School of Applied Sciences and Arts invites applications to join our teaching pool for English composition for the 2026-2027 academic year. We are especially interested in candidates who have experience in online writing instruction and understand the unique challenges of teaching writing in digitally mediated environments. The successful candidate(s) will teach undergraduate courses in composition in the online Writers’ Studio; provide timely feedback on student assignments; attend curriculum training sessions; assess student work; and respond to student emails and messages regarding class assignments. Faculty Associate positions are one ASU academic session, non-benefits-eligible, fixed-term appointments with no tenure implications, not to exceed an average of .40 FTE per semester. The number of courses is contingent upon unit needs, funding, and sufficient enrollment. (see more at <a href="https://apply.interfolio.com/184494" target="_blank" rel="noopener noreferrer" class="text-[#934293] underline hover:text-[#702e70]">https://apply.interfolio.com/184494</a>)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Publications in Effective Practice -->
+        <section class="section-padding bg-gradient-to-b from-[#fdfbff] to-white border-y border-[var(--gsole-autumn-amber)]">
+<!-- ... existing code -->
